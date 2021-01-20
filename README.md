@@ -1,13 +1,15 @@
 # cherrybone
 
 ## Usage
+
+Instantiation Start server
 ```python
 from cherrybone import Server
 
-Server(app, port=8080).start()
+server = Server(app, port=8080)
 ```
 
-### List of parameters
+List of parameters:
 ```python
 port: int
 path: str
@@ -22,4 +24,14 @@ max_queued_requests: int
 request_acceptance_timeout: int
 tcp_nodelay: bool
 shutdown_timeout: int
+```
+
+### Start server
+```python
+server.start()
+```
+
+### Stop server
+```python
+server.stop()
 ```
