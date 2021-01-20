@@ -1,9 +1,25 @@
-# python-package
-Python Package Boilerplate
+# cherrybone
 
 ## Usage
+```python
+from cherrybone import Server
+
+Server(app, port=8080).start()
 ```
-git clone https://github.com/brunneis/python-package
-cd python-package
-./rename.sh
+
+### List of parameters
+```python
+port: int
+path: str
+host: str
+threads: int
+max_body_bytes: int
+max_header_bytes: int
+max_threads: int
+max_queued_connections: int
+connection_timeout: int
+max_queued_requests: int
+request_acceptance_timeout: int
+tcp_nodelay: bool
+shutdown_timeout: int
 ```
